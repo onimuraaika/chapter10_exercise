@@ -242,6 +242,7 @@ footer {
 
   .nav-list-item {
     width: 100%;
+    margin: 0 0 10px 0;
   }
 
   .social {
@@ -262,7 +263,42 @@ footer {
     margin: 0;
   }
 
+  .blog-box {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .blog-image {
+    width: 49%;
+  }
+
+/* 横の写真(blog-image)との高さを合わせるために「padding-top」で上の余白を縮めた */
+  .blog-text {
+    width: 49%;
+    padding-top: 5px;
+  }
+
+  /* 「padding-left,right」サイドバーの左右に余白 */
   .sidebar {
     width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  /* ↓「padding-top: 48%;」分からない。
+    widthとpadding-topを指定したら正方形に表示されるようになった*/
+  .instagram-box {
+    width: 48%;
+    padding-top: 48%;
+  }
+
+  /* 奇数番目の画像右横に隙間をとるためのmargin-right */
+  .instagram-box:nth-child(odd) {
+    margin-right: 4%;
+  }
+
+  /* popularと重なった部分を解消 */
+  .pagination {
+    margin-bottom: 50px;
   }
 }
