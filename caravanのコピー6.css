@@ -10,7 +10,11 @@ a {
 }
 
 /* 複数のfont-familyを追加しておくと、左から順番に対応するものから適用される */
-header, nav, h2, .main-visual, footer {
+header,
+nav,
+h2,
+.main-visual,
+footer {
   font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
 }
 
@@ -223,4 +227,42 @@ footer {
 
 .footer-text {
   color: #fff;
+}
+
+/* ↓レスポンシブ対応のための記述↓ */
+
+@media screen and (max-width: 425px) {
+  header {
+    width: 100%;
+  }
+
+  .nav-list {
+    width: 100%;
+  }
+
+  .nav-list-item {
+    width: 100%;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .main-visual-content {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .blog {
+    width: 100%;
+    margin: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
 }
